@@ -62,9 +62,15 @@ def game():
         print(f"Player Cards {*player,}") 
         print(f"Dealer Cards {*dealer,}")
         return 0
-    if sum(dealer)>21:
+    if sum(dealer)>21 or sum(player)>sum(dealer):
         print("            ")
         print("Player Wins")
+        print(f"Player Cards {*player,}") 
+        print(f"Dealer Cards {*dealer,}")
+        return 0
+    if sum(player)==sum(dealer):
+        print("            ")
+        print("Draw")
         print(f"Player Cards {*player,}") 
         print(f"Dealer Cards {*dealer,}")
         return 0
