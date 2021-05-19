@@ -1,5 +1,7 @@
 import random
+from art import logo
 def game():
+    print(logo)
     cards=[]
     t=int(input("Number of decks dealer has? "))
     if t<=0:
