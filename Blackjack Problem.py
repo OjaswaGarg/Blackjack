@@ -31,7 +31,7 @@ def game():
             print("Player Wins")   
             return 0
         print(f"Player Cards {*player,}")
-        print(f"Player Cards {*dealer,}")
+        print(f"Dealer Cards {*dealer,}")
     else:    
         print(f"Player Cards {*player,}")       
         print("Dealer Cards "+str(dealer[0])+" _")
@@ -43,13 +43,13 @@ def game():
         if sum(player)>21:
             print("            ")
             print(f"Player Cards {*player,}") 
-            print(f"Player Cards {*dealer,}")
+            print(f"Dealer Cards {*dealer,}")
             print("Dealer Wins")
             return 0
         else:
             print(f"Player Cards {*player,}")    
             K=int(input("Player 1-Hit 2-Stand "))
-    print(f"Player Cards {*dealer,}")
+    print(f"Dealer Cards {*dealer,}")
     while(sum(dealer)<17):
         dealer.append(cards.pop(0))
         a(dealer)
